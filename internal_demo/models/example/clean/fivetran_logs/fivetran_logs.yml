@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: fivetran_log
+    tables:
+      - name: log
+
+models:
+  - name: clean_fivetran_logs
