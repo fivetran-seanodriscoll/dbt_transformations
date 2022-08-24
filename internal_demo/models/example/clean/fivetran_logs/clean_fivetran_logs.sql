@@ -1,6 +1,6 @@
 
 with logs as (
-    select * from {{source('fivetran_logs', 'log')}}
+    select * from {{source('fivetran_log', 'log')}}
 )
 
 select * from logs
