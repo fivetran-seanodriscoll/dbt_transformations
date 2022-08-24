@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: salesforce_sandbox
+    tables:
+      - name: account
+
+models:
+  - name: clean_accounts
