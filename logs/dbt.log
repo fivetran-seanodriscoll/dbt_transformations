@@ -25,3 +25,29 @@ Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
 Happy modeling!
 
 [0m09:48:22.529094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126700>]}
+
+
+============================== 2022-08-30 12:34:04.139539 | acbc1256-fb8f-4b92-b20b-11acc65bdcae ==============================
+[0m12:34:04.139545 [info ] [MainThread]: Running with dbt=1.2.0
+[0m12:34:04.139880 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'onboarding_training', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m12:34:04.139954 [debug] [MainThread]: Tracking: tracking
+[0m12:34:04.157917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109303f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092eee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092fdd30>]}
+[0m12:34:04.159331 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.8/site-packages/dbt/include/starter_project
+[0m12:37:13.862974 [info ] [MainThread]: Profile onboarding_training written to /Users/sean.odriscoll/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:37:13.864291 [info ] [MainThread]: 
+Your new dbt project "onboarding_training" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:37:13.865187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092eee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d15760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d15a00>]}
