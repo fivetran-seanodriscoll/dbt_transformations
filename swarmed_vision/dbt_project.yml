@@ -1,0 +1,66 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'swarmed_vision'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'swarmed_vision'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/ directory
+# as tables. These settings can be overridden in the individual model files
+# using the `{{ config(...) }}` macro.
+models:
+  +materialized: view
+
+vars:
+    xero_schema: xero
+
+    # Hubspot Configurations
+    hubspot_schema: hubspot
+
+    hubspot_email_event_bounce_enabled: false
+    hubspot_email_event_click_enabled: false
+    hubspot_email_event_deferred_enabled: false
+    hubspot_email_event_dropped_enabled: false
+    hubspot_email_event_forward_enabled: false
+    hubspot_email_event_print_enabled: false
+    hubspot_email_event_spam_report_enabled: false
+    hubspot_email_event_status_change_enabled: false
+    hubspot_engagement_company_enabled: false
+    hubspot_engagement_deal_enabled: false
+    #hubspot_engagement_enabled: false
+    hubspot_engagement_meeting_enabled: false
+    hubspot_engagement_task_enabled: false
+
+    email_metrics: ['bounces',      #Remove if you do not want metrics in final model.
+                  'clicks',       #Remove if you do not want metrics in final model.
+                  'deferrals',    #Remove if you do not want metrics in final model.
+                  'deliveries',   #Remove if you do not want metrics in final model.
+                  'drops',        #Remove if you do not want metrics in final model.
+                  'forwards',     #Remove if you do not want metrics in final model.
+                  'opens',        #Remove if you do not want metrics in final model.
+                  'prints',       #Remove if you do not want metrics in final model.
+                  'spam_reports' #Remove if you do not want metrics in final model.
+                  ]
