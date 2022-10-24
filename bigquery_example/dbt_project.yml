@@ -36,3 +36,16 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    custom:
+      +materialised: table
+      +tags:
+        - "custom"
+
+vars:
+    # FIVETRAN LOG VARIABLES
+    fivetran_log_schema: fivetran_log
+    fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
+    fivetran_log_using_triggers: false # this will disable only trigger_table logic 
+    fivetran_log_using_account_membership: false # this will disable only the account membership logic
+    fivetran_log_using_destination_membership: false # this will disable only the destination membership logic
+    fivetran_log_using_user: false # this will disable only the user logic
