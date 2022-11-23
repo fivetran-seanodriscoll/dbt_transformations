@@ -36,3 +36,9 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+vars:
+  ad_reporting__apple_search_ads_enabled: False # by default this is assumed to be True
+  ad_reporting__pinterest_ads_enabled: False # by default this is assumed to be True
+  ad_reporting__google_ads_enabled: False # by default this is assumed to be True
+  ad_reporting__tiktok_ads_enabled: False # by default this is assumed to be True

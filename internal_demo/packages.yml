@@ -1,3 +1,6 @@
 packages:
+  - package: fivetran/ad_reporting
+    version: 1.0.3
+
   - package: fivetran/fivetran_log
     version: 0.6.2
