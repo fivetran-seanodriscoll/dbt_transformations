@@ -43,7 +43,7 @@ vars:
   ad_reporting__microsoft_ads_enabled: False # by default this is assumed to be True
   ad_reporting__linkedin_ads_enabled: False # by default this is assumed to be True
   ad_reporting__google_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__twitter_ads_enabled: False # by default this is assumed to be True
+  ad_reporting__twitter_ads_enabled: True # by default this is assumed to be True
   ad_reporting__facebook_ads_enabled: True # by default this is assumed to be True
   ad_reporting__snapchat_ads_enabled: False # by default this is assumed to be True
   ad_reporting__tiktok_ads_enabled: False # by default this is assumed to be True

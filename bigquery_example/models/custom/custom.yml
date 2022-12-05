@@ -4,3 +4,7 @@ sources:
   - name: klaviyo
     tables:
       - name: campaign
+  
+  - name: salesforce_sandbox
+    tables:
+      - name: account

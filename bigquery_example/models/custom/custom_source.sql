@@ -1,1 +1,1 @@
-select * from {{ source('klaviyo', 'campaign') }}
+select * from {{ source('salesforce_sandbox', 'account') }}
