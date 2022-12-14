@@ -2,12 +2,12 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'internal_demo'
+name: 'warn_vertebra'
 version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'internal_demo'
+profile: 'warn_vertebra'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -38,12 +38,7 @@ models:
       +materialized: view
 
 vars:
-  ad_reporting__apple_search_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__pinterest_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__microsoft_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__linkedin_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__google_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__twitter_ads_enabled: True # by default this is assumed to be True
-  ad_reporting__facebook_ads_enabled: True # by default this is assumed to be True
-  ad_reporting__snapchat_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__tiktok_ads_enabled: False # by default this is assumed to be True
+    fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
+    fivetran_log_using_triggers: false # this will disable only trigger_table logic 
+    fivetran_log_using_account_membership: false # this will disable only the account membership logic
+    fivetran_log_using_destination_membership: false # this will disable only the destination membership logic
