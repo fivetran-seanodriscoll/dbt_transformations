@@ -38,6 +38,7 @@ models:
       +materialized: view
 
 vars:
+    fivetran_log_schema: cytora_fivetran_log 
     fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
     fivetran_log_using_triggers: false # this will disable only trigger_table logic 
     fivetran_log_using_account_membership: false # this will disable only the account membership logic
