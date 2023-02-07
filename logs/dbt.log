@@ -190,3 +190,32 @@ Happy modeling!
     raise Abort() from None
 click.exceptions.Abort
 
+
+
+============================== 2023-02-07 16:16:43.002575 | 707f3a0a-89e0-4a15-a5d3-fb1650415787 ==============================
+[0m16:16:43.002585 [info ] [MainThread]: Running with dbt=1.3.0
+[0m16:16:43.002917 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'test_empty', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:16:43.003033 [debug] [MainThread]: Tracking: tracking
+[0m16:16:44.189437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e91d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f73f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e915b0>]}
+[0m16:16:44.191039 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:16:46.874748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f16400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f161f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f168e0>]}
+[0m16:16:46.875653 [debug] [MainThread]: Flushing usage events
+[0m16:16:47.564450 [error] [MainThread]: Encountered an error:
+
+[0m16:16:47.567324 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 331, in run
+    adapter = self.ask_for_adapter_choice()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 257, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
