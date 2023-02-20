@@ -35,32 +35,8 @@ models:
   +materialized: view
 
 vars:
-    xero_schema: xero
 
-    # Hubspot Configurations
-    hubspot_schema: hubspot
-
-    hubspot_email_event_bounce_enabled: false
-    hubspot_email_event_click_enabled: false
-    hubspot_email_event_deferred_enabled: false
-    hubspot_email_event_dropped_enabled: false
-    hubspot_email_event_forward_enabled: false
-    hubspot_email_event_print_enabled: false
-    hubspot_email_event_spam_report_enabled: false
-    hubspot_email_event_status_change_enabled: false
-    hubspot_engagement_company_enabled: false
-    hubspot_engagement_deal_enabled: false
-    #hubspot_engagement_enabled: false
-    hubspot_engagement_meeting_enabled: false
-    hubspot_engagement_task_enabled: false
-
-    email_metrics: ['bounces',      #Remove if you do not want metrics in final model.
-                  'clicks',       #Remove if you do not want metrics in final model.
-                  'deferrals',    #Remove if you do not want metrics in final model.
-                  'deliveries',   #Remove if you do not want metrics in final model.
-                  'drops',        #Remove if you do not want metrics in final model.
-                  'forwards',     #Remove if you do not want metrics in final model.
-                  'opens',        #Remove if you do not want metrics in final model.
-                  'prints',       #Remove if you do not want metrics in final model.
-                  'spam_reports' #Remove if you do not want metrics in final model.
-                  ]
+    # Fivetran Log Package Configurations
+    fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
+    fivetran_log_using_triggers: false # this will disable only trigger_table logic 
+    fivetran_log_using_destination_membership: false # this will disable only the destination membership logic
