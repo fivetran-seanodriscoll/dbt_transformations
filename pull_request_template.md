@@ -88,18 +88,11 @@ addressed, and remove any items that are not relevant to this PR.
 
 - [ ] My commits are related to the pull request and look clean.
 
-- [ ] My SQL follows the style guide.
+- [ ] I have run `dbt run` and `dbt test` and confirmed I have not introduced any errors to the workflow.
+
+- [ ] My SQL follows our internal style guide.
 
 - [ ] I have materialized my models appropriately.
 
 - [ ] I have added appropriate tests and documentation to any new models.
 
-- [ ] I have updated the README file.
-
-{%- if project.warehouse == 'redshift' %}
-
-- [ ] I have added sort and dist keys to models materialized as tables.
-
-- [ ] I have validated the SQL in any late-binding views.
-
-{% endif %}
