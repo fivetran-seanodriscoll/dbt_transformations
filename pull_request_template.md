@@ -1,4 +1,4 @@
-&lt;!---
+<!---
 
 Provide a short summary in the Title above. Examples of good PR titles:
 
@@ -12,7 +12,7 @@ Provide a short summary in the Title above. Examples of good PR titles:
 
 ## Description & motivation
 
-&lt;!---
+<!---
 
 Describe your changes, and why you're making them. Is this linked to an open
 
@@ -22,7 +22,7 @@ issue, a Trello card, or another pull request? Link it here.
 
 ## To-do before merge
 
-&lt;!---
+<!---
 
 (Optional -- remove this section if not needed)
 
@@ -38,7 +38,7 @@ Include any notes about things that need to happen before this PR is merged, e.g
 
 ## Screenshots:
 
-&lt;!---
+<!---
 
 Include a screenshot of the relevant section of the updated DAG. You can access
 
@@ -48,7 +48,7 @@ your version of the DAG by running `dbt docs generate && dbt docs serve`.
 
 ## Validation of models:
 
-&lt;!---
+<!---
 
 Include any output that confirms that the models do what is expected. This might
 
@@ -58,9 +58,9 @@ compares an existing model with a new one.
 
 -->
 
-## Changes to existing models:
+## Changes to existing models 
 
-&lt;!---
+<!---
 
 Include this section if you are changing any existing models. Link any related
 
@@ -70,9 +70,9 @@ models should be dropped after merge, or whether a full-refresh run is required)
 
 -->
 
-## Checklist:
+## Checklist
 
-&lt;!---
+<!---
 
 This checklist is mostly useful as a reminder of small things that can easily be
 
