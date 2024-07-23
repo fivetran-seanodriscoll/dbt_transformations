@@ -1,221 +1,1817 @@
+[0m19:04:05.099669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10964c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109639450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096af350>]}
 
 
-============================== 2022-08-24 09:46:28.647477 | 5e784399-f62b-432b-97c8-1ab40bdb3859 ==============================
-[0m09:46:28.647483 [info ] [MainThread]: Running with dbt=1.2.0
-[0m09:46:28.647697 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'internal_demo', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m09:46:28.647767 [debug] [MainThread]: Tracking: tracking
-[0m09:46:28.906931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10411d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104110610>]}
-[0m09:46:28.908074 [info ] [MainThread]: Creating dbt configuration folder at /Users/sean.odriscoll/.dbt
-[0m09:46:28.908914 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.8/site-packages/dbt/include/starter_project
-[0m09:48:22.527993 [info ] [MainThread]: Profile internal_demo written to /Users/sean.odriscoll/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m09:48:22.528853 [info ] [MainThread]: 
-Your new dbt project "internal_demo" was created!
+============================== 19:04:05.103683 | 5794a7ab-e54f-4293-aad4-9a47def4ab99 ==============================
+[0m19:04:05.103683 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:04:05.104006 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:04:05.722257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096c7d90>]}
+[0m19:04:05.746944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090e9090>]}
+[0m19:04:05.748499 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m19:04:05.761067 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m19:04:05.761696 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:04:05.761918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096d8850>]}
+[0m19:04:06.288970 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m19:04:06.289302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096d8c90>]}
+[0m19:04:06.380441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119cf8e90>]}
+[0m19:04:06.391383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a1b2e10>]}
+[0m19:04:06.391642 [info ] [MainThread]: Found 2 models, 4 data tests, 446 macros
+[0m19:04:06.391815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a101490>]}
+[0m19:04:06.393061 [info ] [MainThread]: 
+[0m19:04:06.393322 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:04:06.395324 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM'
+[0m19:04:06.403600 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM"
+[0m19:04:06.403871 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM limit 10000
+[0m19:04:06.404017 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:07.841965 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5d7fc-090a-c997-0005-05017cb88f3f
+[0m19:04:07.842654 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m19:04:07.843151 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:04:07.843482 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:04:07.843967 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM: Close
+[0m19:04:08.279969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5794a7ab-e54f-4293-aad4-9a47def4ab99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ca8990>]}
+[0m19:04:08.281055 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:04:08.281544 [info ] [MainThread]: 
+[0m19:04:08.285756 [debug] [Thread-1 (]: Began running node model.swarmed_vision.my_first_dbt_model
+[0m19:04:08.286297 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM, now model.swarmed_vision.my_first_dbt_model)
+[0m19:04:08.286714 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.my_first_dbt_model
+[0m19:04:08.295270 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.my_first_dbt_model"
+[0m19:04:08.296502 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.my_first_dbt_model
+[0m19:04:08.297221 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.my_first_dbt_model
+[0m19:04:08.297927 [debug] [Thread-1 (]: Began running node model.swarmed_vision.my_second_dbt_model
+[0m19:04:08.298355 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.my_first_dbt_model, now model.swarmed_vision.my_second_dbt_model)
+[0m19:04:08.298666 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.my_second_dbt_model
+[0m19:04:08.301267 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.my_second_dbt_model"
+[0m19:04:08.301953 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.my_second_dbt_model
+[0m19:04:08.302595 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.my_second_dbt_model
+[0m19:04:08.302956 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m19:04:08.303430 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.my_second_dbt_model, now test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m19:04:08.303752 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m19:04:08.312672 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m19:04:08.313246 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m19:04:08.313682 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m19:04:08.313946 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m19:04:08.314220 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710, now test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321)
+[0m19:04:08.314442 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m19:04:08.318542 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321"
+[0m19:04:08.318947 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m19:04:08.319258 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m19:04:08.319443 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m19:04:08.319655 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321, now test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778)
+[0m19:04:08.319822 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m19:04:08.322605 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778"
+[0m19:04:08.323014 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m19:04:08.323318 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m19:04:08.323503 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m19:04:08.323710 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778, now test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493)
+[0m19:04:08.323884 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m19:04:08.326042 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493"
+[0m19:04:08.326423 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m19:04:08.326784 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m19:04:08.327329 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:04:08.327497 [debug] [MainThread]: Connection 'test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m19:04:08.328163 [debug] [MainThread]: Command end result
+[0m19:04:08.371111 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m19:04:08.371320 [info ] [MainThread]: Building catalog
+[0m19:04:08.375355 [debug] [ThreadPool]: Acquiring new snowflake connection 'FIVETRAN_SEAN_ODRISCOLL.information_schema'
+[0m19:04:08.383067 [debug] [ThreadPool]: Using snowflake connection "FIVETRAN_SEAN_ODRISCOLL.information_schema"
+[0m19:04:08.383416 [debug] [ThreadPool]: On FIVETRAN_SEAN_ODRISCOLL.information_schema: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "FIVETRAN_SEAN_ODRISCOLL.information_schema"} */
+with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
 
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
 
-  https://docs.getdbt.com/docs/configure-your-profile
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
 
-One more thing:
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
 
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
 
-  https://community.getdbt.com/
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from FIVETRAN_SEAN_ODRISCOLL.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM' and upper("table_schema") = upper('DBT_TRANSFORM')
 
-Happy modeling!
+                    and 
+    "table_name" ilike 'my_second_dbt_model' and upper("table_name") = upper('my_second_dbt_model')
 
-[0m09:48:22.529094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104126700>]}
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM' and upper("table_schema") = upper('DBT_TRANSFORM')
 
+                    and 
+    "table_name" ilike 'my_first_dbt_model' and upper("table_name") = upper('my_first_dbt_model')
 
-============================== 2022-08-30 12:34:04.139539 | acbc1256-fb8f-4b92-b20b-11acc65bdcae ==============================
-[0m12:34:04.139545 [info ] [MainThread]: Running with dbt=1.2.0
-[0m12:34:04.139880 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'onboarding_training', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m12:34:04.139954 [debug] [MainThread]: Tracking: tracking
-[0m12:34:04.157917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109303f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092eee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092fdd30>]}
-[0m12:34:04.159331 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.8/site-packages/dbt/include/starter_project
-[0m12:37:13.862974 [info ] [MainThread]: Profile onboarding_training written to /Users/sean.odriscoll/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m12:37:13.864291 [info ] [MainThread]: 
-Your new dbt project "onboarding_training" was created!
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
 
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from FIVETRAN_SEAN_ODRISCOLL.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM' and upper("table_schema") = upper('DBT_TRANSFORM')
 
-  https://docs.getdbt.com/docs/configure-your-profile
+                    and 
+    "table_name" ilike 'my_second_dbt_model' and upper("table_name") = upper('my_second_dbt_model')
 
-One more thing:
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM' and upper("table_schema") = upper('DBT_TRANSFORM')
 
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+                    and 
+    "table_name" ilike 'my_first_dbt_model' and upper("table_name") = upper('my_first_dbt_model')
 
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m12:37:13.865187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092eee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d15760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d15a00>]}
-
-
-============================== 2022-09-06 12:43:01.732760 | 6ccbf5f9-0db3-4c97-b261-e3db00e8680e ==============================
-[0m12:43:01.732766 [info ] [MainThread]: Running with dbt=1.2.0
-[0m12:43:01.732958 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'swarmed_vision', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m12:43:01.733024 [debug] [MainThread]: Tracking: tracking
-[0m12:43:01.748961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c7bfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c66e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c787f0>]}
-[0m12:43:01.750015 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.8/site-packages/dbt/include/starter_project
-[0m12:43:17.500018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c4e550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c7b250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c7b0a0>]}
-
-
-============================== 2022-09-06 12:45:07.943894 | 01ca36b3-5bdd-4a00-b303-2cba886587d2 ==============================
-[0m12:45:07.943900 [info ] [MainThread]: Running with dbt=1.2.1
-[0m12:45:07.944091 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'swarmed_vision', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m12:45:07.944163 [debug] [MainThread]: Tracking: tracking
-[0m12:45:07.959942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc6f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc6da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc6bc0>]}
-[0m12:45:07.961041 [debug] [MainThread]: Starter project path: /Users/sean.odriscoll/.pyenv/versions/3.10.6/lib/python3.10/site-packages/dbt/include/starter_project
-[0m12:47:15.758113 [info ] [MainThread]: Profile swarmed_vision written to /Users/sean.odriscoll/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m12:47:15.758754 [info ] [MainThread]: 
-Your new dbt project "swarmed_vision" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m12:47:15.759145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b83c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc6f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc6c20>]}
-[0m12:47:15.759514 [debug] [MainThread]: Flushing usage events
-
-
-============================== 2022-09-28 13:22:02.312437 | 0845972b-672c-47bf-8f50-ed896d0b12dd ==============================
-[0m13:22:02.312442 [info ] [MainThread]: Running with dbt=1.2.1
-[0m13:22:02.312799 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'bigquery_example', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m13:22:02.312869 [debug] [MainThread]: Tracking: tracking
-[0m13:22:02.333780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064a9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064a93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064a9400>]}
-[0m13:22:02.335030 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
-[0m13:22:47.407262 [info ] [MainThread]: Profile bigquery_example written to /Users/sean.odriscoll/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m13:22:47.408001 [info ] [MainThread]: 
-Your new dbt project "bigquery_example" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m13:22:47.408484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10646e4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10646ef10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10646e4c0>]}
-[0m13:22:47.408884 [debug] [MainThread]: Flushing usage events
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+[0m19:04:08.383660 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:11.236148 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.852 seconds
+[0m19:04:11.239875 [debug] [ThreadPool]: On FIVETRAN_SEAN_ODRISCOLL.information_schema: Close
+[0m19:04:11.719952 [info ] [MainThread]: Catalog written to /Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/target/catalog.json
+[0m19:04:11.722300 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 6.6668205, "process_user_time": 2.104351, "process_kernel_time": 0.284699, "process_mem_max_rss": "205914112", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:04:11.722781 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:04:11.722710 after 6.67 seconds
+[0m19:04:11.723039 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:04:11.723239 [debug] [MainThread]: Connection 'FIVETRAN_SEAN_ODRISCOLL.information_schema' was properly closed.
+[0m19:04:11.723473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109693210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d7c510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082a96d0>]}
+[0m19:04:11.723737 [debug] [MainThread]: Flushing usage events
+[0m19:04:13.489654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079ae2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a21d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a224d0>]}
 
 
-============================== 2022-09-28 13:30:49.147103 | dff55fd0-eb6d-4d52-8d7a-0fb2b0c3530b ==============================
-[0m13:30:49.147109 [info ] [MainThread]: Running with dbt=1.2.1
-[0m13:30:49.147445 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
-[0m13:30:49.147515 [debug] [MainThread]: Tracking: tracking
-[0m13:30:49.160278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047a0220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047a0130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047a0160>]}
-[0m13:30:49.355863 [debug] [MainThread]: Executing "git --help"
-[0m13:30:49.364703 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m13:30:49.365161 [debug] [MainThread]: STDERR: "b''"
-[0m13:30:49.370945 [debug] [MainThread]: Acquiring new bigquery connection "debug"
-[0m13:30:49.372153 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m13:30:49.374209 [debug] [MainThread]: On debug: select 1 as id
-[0m13:30:50.503645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b0bb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b38a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b38e80>]}
-[0m13:30:50.504419 [debug] [MainThread]: Flushing usage events
-[0m13:30:50.911348 [debug] [MainThread]: Connection 'debug' was properly closed.
+============================== 19:04:13.492291 | 4746148f-d4c6-49b9-b5cd-4a2b415ba19e ==============================
+[0m19:04:13.492291 [info ] [MainThread]: Running with dbt=1.8.3
+[0m19:04:13.492616 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'version_check': 'True', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs serve', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:04:13.946856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4746148f-d4c6-49b9-b5cd-4a2b415ba19e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aba9210>]}
+[0m19:04:13.970769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4746148f-d4c6-49b9-b5cd-4a2b415ba19e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106636490>]}
+[0m19:04:20.150297 [error] [MainThread]: Encountered an error:
 
-
-============================== 2022-10-24 12:42:32.054852 | b5096daf-79c7-442a-b20c-298debe70fe7 ==============================
-[0m12:42:32.054859 [info ] [MainThread]: Running with dbt=1.3.0
-[0m12:42:32.055285 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_uxdi', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m12:42:32.055388 [debug] [MainThread]: Tracking: tracking
-[0m12:42:32.074636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10916ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10916f790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10916f760>]}
-[0m12:42:32.076417 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
-[0m12:43:05.677784 [info ] [MainThread]: Profile dbt_uxdi written to /Users/sean.odriscoll/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m12:43:05.678423 [info ] [MainThread]: 
-Your new dbt project "dbt_uxdi" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m12:43:05.678799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b79c8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b79cfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b79c2e0>]}
-[0m12:43:05.679138 [debug] [MainThread]: Flushing usage events
-
-
-============================== 2022-10-24 13:26:02.938274 | 72c7b496-a961-4754-b327-496917cdb86f ==============================
-[0m13:26:02.938281 [info ] [MainThread]: Running with dbt=1.3.0
-[0m13:26:02.938592 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_uxdi_2', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m13:26:02.938661 [debug] [MainThread]: Tracking: tracking
-[0m13:26:02.965457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f7a700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f8aa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f8a610>]}
-[0m13:26:02.967703 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
-[0m13:26:22.379723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113874250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113874c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138742b0>]}
-[0m13:26:22.380347 [debug] [MainThread]: Flushing usage events
-[0m13:26:23.013082 [error] [MainThread]: Encountered an error:
-
-[0m13:26:23.016865 [error] [MainThread]: Traceback (most recent call last):
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 135, in main
-    results, succeeded = handle_and_check(args)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
-    task, res = run_from_args(parsed)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+[0m19:04:20.157052 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/main.py", line 303, in docs_serve
     results = task.run()
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 332, in run
-    self.create_profile_from_target(adapter, profile_name=project_name)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 207, in create_profile_from_target
-    self.create_profile_from_profile_template(profile_template, profile_name)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 191, in create_profile_from_profile_template
-    target = self.generate_target_from_input(prompts, initial_target)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 157, in generate_target_from_input
-    target[key] = click.prompt(
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
-    value = prompt_func(prompt)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
-    raise Abort() from None
-click.exceptions.Abort
+              ^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m19:04:20.160139 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_wall_clock_time": 6.7105613, "process_user_time": 0.973756, "process_kernel_time": 0.18305, "process_mem_max_rss": "185417728", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:04:20.160790 [debug] [MainThread]: Command `dbt docs serve` failed at 19:04:20.160683 after 6.71 seconds
+[0m19:04:20.161189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a3b5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079b4790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030256d0>]}
+[0m19:04:20.161580 [debug] [MainThread]: Flushing usage events
+[0m13:39:14.163339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097bbb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109825810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109826050>]}
 
 
+============================== 13:39:14.166507 | ba537938-b1f9-4766-b5ed-f7389fb4a524 ==============================
+[0m13:39:14.166507 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:39:14.166867 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:39:14.225191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ba537938-b1f9-4766-b5ed-f7389fb4a524', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109805750>]}
+[0m13:39:14.248299 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.1284185, "process_user_time": 0.677533, "process_kernel_time": 0.1524, "process_mem_max_rss": "110051328", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:39:14.248776 [debug] [MainThread]: Command `dbt clean` succeeded at 13:39:14.248717 after 0.13 seconds
+[0m13:39:14.248998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043ce750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a0aa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045384d0>]}
+[0m13:39:14.249203 [debug] [MainThread]: Flushing usage events
+[0m13:39:22.412780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3b8190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a74d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b40b690>]}
 
-============================== 2023-02-07 16:16:43.002575 | 707f3a0a-89e0-4a15-a5d3-fb1650415787 ==============================
-[0m16:16:43.002585 [info ] [MainThread]: Running with dbt=1.3.0
-[0m16:16:43.002917 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'test_empty', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m16:16:43.003033 [debug] [MainThread]: Tracking: tracking
-[0m16:16:44.189437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e91d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f73f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e915b0>]}
-[0m16:16:44.191039 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
-[0m16:16:46.874748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f16400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f161f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f168e0>]}
-[0m16:16:46.875653 [debug] [MainThread]: Flushing usage events
-[0m16:16:47.564450 [error] [MainThread]: Encountered an error:
 
-[0m16:16:47.567324 [error] [MainThread]: Traceback (most recent call last):
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 135, in main
-    results, succeeded = handle_and_check(args)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
-    task, res = run_from_args(parsed)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+============================== 13:39:22.415996 | 5235463f-3eaa-42ef-9ca1-09294e96c13c ==============================
+[0m13:39:22.415996 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:39:22.416327 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:39:23.221352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d167d0>]}
+[0m13:39:23.245625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093da410>]}
+[0m13:39:23.246380 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:39:23.258976 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m13:39:23.259559 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:39:23.259798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5f5b50>]}
+[0m13:39:23.865981 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m13:39:23.866367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a9e4ed0>]}
+[0m13:39:23.919363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a68de90>]}
+[0m13:39:23.930274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac7cbd0>]}
+[0m13:39:23.930544 [info ] [MainThread]: Found 4 models, 6 data tests, 4 sources, 446 macros
+[0m13:39:23.930724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a9bb990>]}
+[0m13:39:23.931741 [info ] [MainThread]: 
+[0m13:39:23.931999 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:39:23.934042 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies'
+[0m13:39:23.941976 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies"
+[0m13:39:23.942260 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_movies limit 10000
+[0m13:39:23.942412 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:39:25.607870 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5dc57-090a-d803-0005-05017cd8bbab
+[0m13:39:25.608520 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:39:25.608983 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m13:39:25.609272 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:39:25.609693 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies: Close
+[0m13:39:26.378865 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies, now list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample)
+[0m13:39:26.382320 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample"
+[0m13:39:26.383378 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_sample limit 10000
+[0m13:39:26.383754 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:39:27.774560 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5dc57-090a-d803-0005-05017cd8bbef
+[0m13:39:27.775115 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:39:27.775603 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m13:39:27.775951 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:39:27.776448 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample: Close
+[0m13:39:28.206245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5235463f-3eaa-42ef-9ca1-09294e96c13c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b193090>]}
+[0m13:39:28.206823 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:39:28.207100 [info ] [MainThread]: 
+[0m13:39:28.210197 [debug] [Thread-1 (]: Began running node model.swarmed_vision.movie_current
+[0m13:39:28.210576 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample, now model.swarmed_vision.movie_current)
+[0m13:39:28.210866 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.movie_current
+[0m13:39:28.216514 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.movie_current"
+[0m13:39:28.217556 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.movie_current
+[0m13:39:28.218113 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.movie_current
+[0m13:39:28.218406 [debug] [Thread-1 (]: Began running node model.swarmed_vision.movie_historical
+[0m13:39:28.218753 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.movie_current, now model.swarmed_vision.movie_historical)
+[0m13:39:28.219056 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.movie_historical
+[0m13:39:28.221145 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.movie_historical"
+[0m13:39:28.221673 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.movie_historical
+[0m13:39:28.222129 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.movie_historical
+[0m13:39:28.222387 [debug] [Thread-1 (]: Began running node model.swarmed_vision.my_first_dbt_model
+[0m13:39:28.222676 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.movie_historical, now model.swarmed_vision.my_first_dbt_model)
+[0m13:39:28.222927 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.my_first_dbt_model
+[0m13:39:28.224577 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.my_first_dbt_model"
+[0m13:39:28.225042 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.my_first_dbt_model
+[0m13:39:28.225421 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.my_first_dbt_model
+[0m13:39:28.225659 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:39:28.225981 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.my_first_dbt_model, now test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a)
+[0m13:39:28.226201 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:39:28.233256 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a"
+[0m13:39:28.233716 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:39:28.234081 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:39:28.234298 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:39:28.234525 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a, now test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e)
+[0m13:39:28.234712 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:39:28.238250 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e"
+[0m13:39:28.238725 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:39:28.239066 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:39:28.239269 [debug] [Thread-1 (]: Began running node model.swarmed_vision.my_second_dbt_model
+[0m13:39:28.239482 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e, now model.swarmed_vision.my_second_dbt_model)
+[0m13:39:28.239657 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.my_second_dbt_model
+[0m13:39:28.241014 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.my_second_dbt_model"
+[0m13:39:28.241345 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.my_second_dbt_model
+[0m13:39:28.241655 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.my_second_dbt_model
+[0m13:39:28.241841 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:39:28.242087 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.my_second_dbt_model, now test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m13:39:28.242270 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:39:28.245266 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m13:39:28.245782 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:39:28.246117 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:39:28.246349 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:39:28.246575 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710, now test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321)
+[0m13:39:28.246746 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:39:28.248818 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321"
+[0m13:39:28.249169 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:39:28.249487 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:39:28.249687 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:39:28.249900 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321, now test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778)
+[0m13:39:28.250070 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:39:28.252022 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778"
+[0m13:39:28.252338 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:39:28.252625 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:39:28.252810 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:39:28.253000 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778, now test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493)
+[0m13:39:28.253159 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:39:28.255009 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493"
+[0m13:39:28.255322 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:39:28.255611 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:39:28.256083 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:39:28.256222 [debug] [MainThread]: Connection 'test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m13:39:28.256958 [debug] [MainThread]: Command end result
+[0m13:39:28.302540 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m13:39:28.302753 [info ] [MainThread]: Building catalog
+[0m13:39:28.307230 [debug] [ThreadPool]: Acquiring new snowflake connection 'FIVETRAN_SEAN_ODRISCOLL.information_schema'
+[0m13:39:28.315468 [debug] [ThreadPool]: Using snowflake connection "FIVETRAN_SEAN_ODRISCOLL.information_schema"
+[0m13:39:28.315915 [debug] [ThreadPool]: On FIVETRAN_SEAN_ODRISCOLL.information_schema: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "FIVETRAN_SEAN_ODRISCOLL.information_schema"} */
+with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from FIVETRAN_SEAN_ODRISCOLL.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_scd2' and upper("table_name") = upper('movie_scd2')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_first_dbt_model' and upper("table_name") = upper('my_first_dbt_model')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie' and upper("table_name") = upper('movie')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_historical' and upper("table_name") = upper('movie_historical')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_cast' and upper("table_name") = upper('movie_cast')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_current' and upper("table_name") = upper('movie_current')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'person' and upper("table_name") = upper('person')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_second_dbt_model' and upper("table_name") = upper('my_second_dbt_model')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from FIVETRAN_SEAN_ODRISCOLL.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_scd2' and upper("table_name") = upper('movie_scd2')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_first_dbt_model' and upper("table_name") = upper('my_first_dbt_model')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie' and upper("table_name") = upper('movie')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_historical' and upper("table_name") = upper('movie_historical')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_cast' and upper("table_name") = upper('movie_cast')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_current' and upper("table_name") = upper('movie_current')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'person' and upper("table_name") = upper('person')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_second_dbt_model' and upper("table_name") = upper('my_second_dbt_model')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+[0m13:39:28.316230 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:39:33.735202 [debug] [ThreadPool]: SQL status: SUCCESS 44 in 5.419 seconds
+[0m13:39:33.748079 [debug] [ThreadPool]: On FIVETRAN_SEAN_ODRISCOLL.information_schema: Close
+[0m13:39:34.335522 [info ] [MainThread]: Catalog written to /Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/target/catalog.json
+[0m13:39:34.337677 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 11.965489, "process_user_time": 2.408648, "process_kernel_time": 0.300537, "process_mem_max_rss": "208470016", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:39:34.338075 [debug] [MainThread]: Command `dbt docs generate` succeeded at 13:39:34.338017 after 11.97 seconds
+[0m13:39:34.338281 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m13:39:34.338447 [debug] [MainThread]: Connection 'FIVETRAN_SEAN_ODRISCOLL.information_schema' was properly closed.
+[0m13:39:34.338652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b41edd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b41efd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d91f90>]}
+[0m13:39:34.338870 [debug] [MainThread]: Flushing usage events
+[0m13:39:36.157087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bb95d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c25d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c26590>]}
+
+
+============================== 13:39:36.159928 | c590b25a-ab24-4725-bd1b-18026cb57195 ==============================
+[0m13:39:36.159928 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:39:36.160260 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'debug': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs serve', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:39:36.636928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c590b25a-ab24-4725-bd1b-18026cb57195', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d2f1210>]}
+[0m13:39:36.663495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c590b25a-ab24-4725-bd1b-18026cb57195', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085691d0>]}
+[0m13:40:32.651719 [error] [MainThread]: Encountered an error:
+
+[0m13:40:32.660258 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/main.py", line 303, in docs_serve
     results = task.run()
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 331, in run
-    adapter = self.ask_for_adapter_choice()
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 257, in ask_for_adapter_choice
-    numeric_choice = click.prompt(prompt_msg, type=click.INT)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
-    value = prompt_func(prompt)
-  File "/opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
-    raise Abort() from None
-click.exceptions.Abort
+              ^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
 
+[0m13:40:32.664461 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_wall_clock_time": 56.549454, "process_user_time": 0.978466, "process_kernel_time": 0.195255, "process_mem_max_rss": "185876480", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:40:32.665488 [debug] [MainThread]: Command `dbt docs serve` failed at 13:40:32.665334 after 56.55 seconds
+[0m13:40:32.666096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c05410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c05990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ba7f90>]}
+[0m13:40:32.666679 [debug] [MainThread]: Flushing usage events
+[0m13:40:52.354740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b7f310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107be9c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bea450>]}
+
+
+============================== 13:40:52.357428 | 13183c08-fad6-4358-b950-8a42ee07dab9 ==============================
+[0m13:40:52.357428 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:40:52.357779 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:40:52.412799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '13183c08-fad6-4358-b950-8a42ee07dab9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107671250>]}
+[0m13:40:52.424475 [debug] [MainThread]: Set downloads directory='/var/folders/dw/qjtwfdmd5pndlpgy6p87wsgm0000gp/T/dbt-downloads-1au5wfhy'
+[0m13:40:52.424770 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m13:40:52.553530 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m13:40:52.554464 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_log.json
+[0m13:40:52.802104 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_log.json 200
+[0m13:40:52.812823 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_utils.json
+[0m13:40:53.080031 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_utils.json 200
+[0m13:40:53.085320 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/spark_utils.json
+[0m13:40:53.163934 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/spark_utils.json 200
+[0m13:40:53.165438 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m13:40:53.246794 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m13:40:53.256054 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m13:40:53.344669 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m13:40:53.369233 [info ] [MainThread]: Updating lock file in file path: /Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/package-lock.yml
+[0m13:40:53.374166 [debug] [MainThread]: Set downloads directory='/var/folders/dw/qjtwfdmd5pndlpgy6p87wsgm0000gp/T/dbt-downloads-78hhq13u'
+[0m13:40:53.382222 [info ] [MainThread]: Installing fivetran/fivetran_log
+[0m13:40:53.787809 [info ] [MainThread]: Installed from version 1.8.0
+[0m13:40:53.788164 [info ] [MainThread]: Up to date!
+[0m13:40:53.788432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '13183c08-fad6-4358-b950-8a42ee07dab9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107db0d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d68210>]}
+[0m13:40:53.788718 [info ] [MainThread]: Installing fivetran/fivetran_utils
+[0m13:40:54.002710 [info ] [MainThread]: Installed from version 0.4.10
+[0m13:40:54.003005 [info ] [MainThread]: Up to date!
+[0m13:40:54.003222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '13183c08-fad6-4358-b950-8a42ee07dab9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d68210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e3ee50>]}
+[0m13:40:54.003450 [info ] [MainThread]: Installing dbt-labs/spark_utils
+[0m13:40:54.255947 [info ] [MainThread]: Installed from version 0.3.0
+[0m13:40:54.256413 [info ] [MainThread]: Up to date!
+[0m13:40:54.256754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '13183c08-fad6-4358-b950-8a42ee07dab9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d68210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d686d0>]}
+[0m13:40:54.257143 [info ] [MainThread]: Installing calogica/dbt_date
+[0m13:40:54.484086 [info ] [MainThread]: Installed from version 0.10.1
+[0m13:40:54.484523 [info ] [MainThread]: Up to date!
+[0m13:40:54.484842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '13183c08-fad6-4358-b950-8a42ee07dab9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d15110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d68290>]}
+[0m13:40:54.485188 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m13:40:54.744282 [info ] [MainThread]: Installed from version 1.2.0
+[0m13:40:54.744550 [info ] [MainThread]: Up to date!
+[0m13:40:54.744748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '13183c08-fad6-4358-b950-8a42ee07dab9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d40790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bca150>]}
+[0m13:40:54.747199 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.4284961, "process_user_time": 0.863256, "process_kernel_time": 0.23664, "process_mem_max_rss": "116359168", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:40:54.747531 [debug] [MainThread]: Command `dbt deps` succeeded at 13:40:54.747476 after 2.43 seconds
+[0m13:40:54.747734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d0a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102faa750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103114510>]}
+[0m13:40:54.747917 [debug] [MainThread]: Flushing usage events
+[0m13:40:56.315551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e88650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ecf690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113eeb250>]}
+
+
+============================== 13:40:56.318843 | dea51512-cf62-4b3c-b622-6e04acede498 ==============================
+[0m13:40:56.318843 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:40:56.319173 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:40:56.814661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a92710>]}
+[0m13:40:56.839860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113769210>]}
+[0m13:40:56.840736 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:40:56.866962 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m13:40:56.916050 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m13:40:56.916438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101a2010>]}
+[0m13:40:57.967067 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m13:40:57.967411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12300c890>]}
+[0m13:40:58.043496 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__destination_membership_destination_id__user_id.82ac27c35a' (models/staging/stg_fivetran_platform.yml) depends on a node named 'stg_fivetran_platform__destination_membership' which is disabled
+[0m13:40:58.140632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123044050>]}
+[0m13:40:58.150510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113778190>]}
+[0m13:40:58.150769 [info ] [MainThread]: Found 21 models, 24 data tests, 12 sources, 819 macros
+[0m13:40:58.150953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122f36190>]}
+[0m13:40:58.152592 [info ] [MainThread]: 
+[0m13:40:58.152856 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:40:58.155349 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_stg_fivetran_platform'
+[0m13:40:58.175409 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_stg_fivetran_platform"
+[0m13:40:58.175709 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_stg_fivetran_platform: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_stg_fivetran_platform"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_stg_fivetran_platform limit 10000
+[0m13:40:58.175859 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:40:59.764069 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5dc58-090a-d804-0005-05017cd8c8b7
+[0m13:40:59.764764 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:40:59.765258 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m13:40:59.765548 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:40:59.765985 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_stg_fivetran_platform: Close
+[0m13:41:00.214926 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_stg_fivetran_platform, now list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies)
+[0m13:41:00.219524 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies"
+[0m13:41:00.219942 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_movies limit 10000
+[0m13:41:00.220291 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:41:01.558976 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5dc59-090a-d804-0005-05017cd8c8d7
+[0m13:41:01.559292 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:41:01.559545 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m13:41:01.559721 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:41:01.559934 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies: Close
+[0m13:41:01.997356 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_movies, now list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_fivetran_platform)
+[0m13:41:02.001322 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_fivetran_platform"
+[0m13:41:02.001701 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_fivetran_platform: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_fivetran_platform"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_fivetran_platform limit 10000
+[0m13:41:02.002015 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:41:03.363683 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5dc59-090a-d803-0005-05017cd8d473
+[0m13:41:03.364958 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:41:03.365754 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m13:41:03.366193 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:41:03.366748 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_fivetran_platform: Close
+[0m13:41:03.793747 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_fivetran_platform, now list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample)
+[0m13:41:03.797935 [debug] [ThreadPool]: Using snowflake connection "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample"
+[0m13:41:03.798377 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_sample limit 10000
+[0m13:41:03.798742 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:41:05.185296 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b5dc59-090a-d803-0005-05017cd8d4b7
+[0m13:41:05.186612 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:41:05.187407 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m13:41:05.188063 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:41:05.188641 [debug] [ThreadPool]: On list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample: Close
+[0m13:41:05.621177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dea51512-cf62-4b3c-b622-6e04acede498', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107899090>]}
+[0m13:41:05.622002 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:41:05.622328 [info ] [MainThread]: 
+[0m13:41:05.626433 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__account
+[0m13:41:05.626904 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_FIVETRAN_SEAN_ODRISCOLL_DBT_TRANSFORM_sample, now model.fivetran_log.stg_fivetran_platform__account)
+[0m13:41:05.627279 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__account
+[0m13:41:05.637663 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__account"
+[0m13:41:05.638794 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__account
+[0m13:41:05.639484 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__account
+[0m13:41:05.639880 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__connector_tmp
+[0m13:41:05.640413 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__account, now model.fivetran_log.stg_fivetran_platform__connector_tmp)
+[0m13:41:05.640830 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__connector_tmp
+[0m13:41:05.644869 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__connector_tmp"
+[0m13:41:05.645716 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__connector_tmp
+[0m13:41:05.646275 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__connector_tmp
+[0m13:41:05.646592 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__credits_used
+[0m13:41:05.647116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__connector_tmp, now model.fivetran_log.stg_fivetran_platform__credits_used)
+[0m13:41:05.647532 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__credits_used
+[0m13:41:05.651585 [debug] [Thread-1 (]: On "model.fivetran_log.stg_fivetran_platform__credits_used": cache miss for schema "FIVETRAN_SEAN_ODRISCOLL.fivetran_log", this is inefficient
+[0m13:41:05.653723 [debug] [Thread-1 (]: Using snowflake connection "model.fivetran_log.stg_fivetran_platform__credits_used"
+[0m13:41:05.653999 [debug] [Thread-1 (]: On model.fivetran_log.stg_fivetran_platform__credits_used: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "node_id": "model.fivetran_log.stg_fivetran_platform__credits_used"} */
+show objects in FIVETRAN_SEAN_ODRISCOLL.fivetran_log limit 10000
+[0m13:41:05.654237 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:41:07.080656 [debug] [Thread-1 (]: SQL status: SUCCESS 14 in 1.426 seconds
+[0m13:41:07.085639 [debug] [Thread-1 (]: While listing relations in database=FIVETRAN_SEAN_ODRISCOLL, schema=fivetran_log, found: ACCOUNT, ACCOUNT_MEMBERSHIP, CONNECTOR, CONNECTOR_TYPE, DESTINATION, FIVETRAN_AUDIT, INCREMENTAL_MAR, LOG, RESOURCE_MEMBERSHIP, ROLE, ROLE_PERMISSION, TEAM, TEAM_MEMBERSHIP, USER
+[0m13:41:07.086875 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__credits_used"
+[0m13:41:07.087773 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__credits_used
+[0m13:41:07.088193 [debug] [Thread-1 (]: On model.fivetran_log.stg_fivetran_platform__credits_used: Close
+[0m13:41:07.530141 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__credits_used
+[0m13:41:07.531220 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__destination
+[0m13:41:07.532092 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__credits_used, now model.fivetran_log.stg_fivetran_platform__destination)
+[0m13:41:07.532718 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__destination
+[0m13:41:07.539125 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__destination"
+[0m13:41:07.540220 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__destination
+[0m13:41:07.540991 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__destination
+[0m13:41:07.541500 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__incremental_mar
+[0m13:41:07.542168 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__destination, now model.fivetran_log.stg_fivetran_platform__incremental_mar)
+[0m13:41:07.542631 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__incremental_mar
+[0m13:41:07.546757 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__incremental_mar"
+[0m13:41:07.547476 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__incremental_mar
+[0m13:41:07.548025 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__incremental_mar
+[0m13:41:07.548371 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__log_tmp
+[0m13:41:07.548728 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__incremental_mar, now model.fivetran_log.stg_fivetran_platform__log_tmp)
+[0m13:41:07.549047 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__log_tmp
+[0m13:41:07.554360 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__log_tmp"
+[0m13:41:07.554981 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__log_tmp
+[0m13:41:07.555458 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__log_tmp
+[0m13:41:07.555754 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__usage_cost
+[0m13:41:07.556102 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__log_tmp, now model.fivetran_log.stg_fivetran_platform__usage_cost)
+[0m13:41:07.556386 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__usage_cost
+[0m13:41:07.560431 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__usage_cost"
+[0m13:41:07.560867 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__usage_cost
+[0m13:41:07.561281 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__usage_cost
+[0m13:41:07.561550 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__user
+[0m13:41:07.561862 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__usage_cost, now model.fivetran_log.stg_fivetran_platform__user)
+[0m13:41:07.562102 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__user
+[0m13:41:07.565088 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__user"
+[0m13:41:07.565505 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__user
+[0m13:41:07.565912 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__user
+[0m13:41:07.566165 [debug] [Thread-1 (]: Began running node model.swarmed_vision.movie_current
+[0m13:41:07.566469 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__user, now model.swarmed_vision.movie_current)
+[0m13:41:07.566694 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.movie_current
+[0m13:41:07.568691 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.movie_current"
+[0m13:41:07.569145 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.movie_current
+[0m13:41:07.569526 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.movie_current
+[0m13:41:07.569760 [debug] [Thread-1 (]: Began running node model.swarmed_vision.movie_historical
+[0m13:41:07.570018 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.movie_current, now model.swarmed_vision.movie_historical)
+[0m13:41:07.570215 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.movie_historical
+[0m13:41:07.572029 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.movie_historical"
+[0m13:41:07.572361 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.movie_historical
+[0m13:41:07.572707 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.movie_historical
+[0m13:41:07.572925 [debug] [Thread-1 (]: Began running node model.swarmed_vision.my_first_dbt_model
+[0m13:41:07.573141 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.movie_historical, now model.swarmed_vision.my_first_dbt_model)
+[0m13:41:07.573338 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.my_first_dbt_model
+[0m13:41:07.575087 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.my_first_dbt_model"
+[0m13:41:07.575437 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.my_first_dbt_model
+[0m13:41:07.575776 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.my_first_dbt_model
+[0m13:41:07.576006 [debug] [Thread-1 (]: Began running node test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e
+[0m13:41:07.576277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.my_first_dbt_model, now test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e)
+[0m13:41:07.576480 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e
+[0m13:41:07.581651 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e"
+[0m13:41:07.582072 [debug] [Thread-1 (]: Began executing node test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e
+[0m13:41:07.582414 [debug] [Thread-1 (]: Finished running node test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e
+[0m13:41:07.582631 [debug] [Thread-1 (]: Began running node test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc
+[0m13:41:07.582844 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.not_null_stg_fivetran_platform__account_account_id.d09ebf1a1e, now test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc)
+[0m13:41:07.583035 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc
+[0m13:41:07.587717 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc"
+[0m13:41:07.588090 [debug] [Thread-1 (]: Began executing node test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc
+[0m13:41:07.588425 [debug] [Thread-1 (]: Finished running node test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc
+[0m13:41:07.588637 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__connector
+[0m13:41:07.588845 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.unique_stg_fivetran_platform__account_account_id.114e181adc, now model.fivetran_log.stg_fivetran_platform__connector)
+[0m13:41:07.589032 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__connector
+[0m13:41:07.595245 [debug] [Thread-1 (]: Using snowflake connection "model.fivetran_log.stg_fivetran_platform__connector"
+[0m13:41:07.595461 [debug] [Thread-1 (]: On model.fivetran_log.stg_fivetran_platform__connector: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "node_id": "model.fivetran_log.stg_fivetran_platform__connector"} */
+describe table FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_stg_fivetran_platform.stg_fivetran_platform__connector_tmp
+[0m13:41:07.595645 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:41:08.901721 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b5dc59-090a-d803-0005-05017cd8d53f
+[0m13:41:08.902484 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_STG_FIVETRAN_PLATFORM' does not exist or not authorized.
+[0m13:41:08.903150 [debug] [Thread-1 (]: Snowflake adapter: Error running SQL: macro get_columns_in_relation
+[0m13:41:08.903638 [debug] [Thread-1 (]: Snowflake adapter: Rolling back transaction.
+[0m13:41:08.906884 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__connector"
+[0m13:41:08.907747 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__connector
+[0m13:41:08.908191 [debug] [Thread-1 (]: On model.fivetran_log.stg_fivetran_platform__connector: Close
+[0m13:41:09.342434 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__connector
+[0m13:41:09.343337 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38
+[0m13:41:09.344205 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__connector, now test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38)
+[0m13:41:09.344786 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38
+[0m13:41:09.351781 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38"
+[0m13:41:09.352908 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38
+[0m13:41:09.353565 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38
+[0m13:41:09.353954 [debug] [Thread-1 (]: Began running node test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780
+[0m13:41:09.354392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__credits_used_measured_month__destination_id.bea8f20c38, now test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780)
+[0m13:41:09.354816 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780
+[0m13:41:09.359301 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780"
+[0m13:41:09.359989 [debug] [Thread-1 (]: Began executing node test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780
+[0m13:41:09.360512 [debug] [Thread-1 (]: Finished running node test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780
+[0m13:41:09.360846 [debug] [Thread-1 (]: Began running node test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed
+[0m13:41:09.361195 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.not_null_stg_fivetran_platform__destination_destination_id.0cdbe6b780, now test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed)
+[0m13:41:09.361499 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed
+[0m13:41:09.365167 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed"
+[0m13:41:09.365736 [debug] [Thread-1 (]: Began executing node test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed
+[0m13:41:09.366246 [debug] [Thread-1 (]: Finished running node test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed
+[0m13:41:09.366564 [debug] [Thread-1 (]: Began running node model.fivetran_log.stg_fivetran_platform__log
+[0m13:41:09.366867 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.unique_stg_fivetran_platform__destination_destination_id.582a1280ed, now model.fivetran_log.stg_fivetran_platform__log)
+[0m13:41:09.367123 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.stg_fivetran_platform__log
+[0m13:41:09.373442 [debug] [Thread-1 (]: Using snowflake connection "model.fivetran_log.stg_fivetran_platform__log"
+[0m13:41:09.373718 [debug] [Thread-1 (]: On model.fivetran_log.stg_fivetran_platform__log: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "node_id": "model.fivetran_log.stg_fivetran_platform__log"} */
+describe table FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_stg_fivetran_platform.stg_fivetran_platform__log_tmp
+[0m13:41:09.373951 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:41:10.766170 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b5dc59-090a-d803-0005-05017cd8d587
+[0m13:41:10.767214 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'FIVETRAN_SEAN_ODRISCOLL.DBT_TRANSFORM_STG_FIVETRAN_PLATFORM' does not exist or not authorized.
+[0m13:41:10.767921 [debug] [Thread-1 (]: Snowflake adapter: Error running SQL: macro get_columns_in_relation
+[0m13:41:10.768406 [debug] [Thread-1 (]: Snowflake adapter: Rolling back transaction.
+[0m13:41:10.772008 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.stg_fivetran_platform__log"
+[0m13:41:10.772952 [debug] [Thread-1 (]: Began executing node model.fivetran_log.stg_fivetran_platform__log
+[0m13:41:10.773404 [debug] [Thread-1 (]: On model.fivetran_log.stg_fivetran_platform__log: Close
+[0m13:41:11.216011 [debug] [Thread-1 (]: Finished running node model.fivetran_log.stg_fivetran_platform__log
+[0m13:41:11.217682 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f
+[0m13:41:11.218732 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.stg_fivetran_platform__log, now test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f)
+[0m13:41:11.219255 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f
+[0m13:41:11.226269 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f"
+[0m13:41:11.227307 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f
+[0m13:41:11.227997 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f
+[0m13:41:11.228404 [debug] [Thread-1 (]: Began running node test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0
+[0m13:41:11.228851 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__usage_cost_measured_month__destination_id.d6d997525f, now test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0)
+[0m13:41:11.229277 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0
+[0m13:41:11.233467 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0"
+[0m13:41:11.234078 [debug] [Thread-1 (]: Began executing node test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0
+[0m13:41:11.234605 [debug] [Thread-1 (]: Finished running node test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0
+[0m13:41:11.234939 [debug] [Thread-1 (]: Began running node test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9
+[0m13:41:11.235289 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.not_null_stg_fivetran_platform__user_user_id.eb17e92ff0, now test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9)
+[0m13:41:11.235607 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9
+[0m13:41:11.239388 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9"
+[0m13:41:11.239929 [debug] [Thread-1 (]: Began executing node test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9
+[0m13:41:11.240393 [debug] [Thread-1 (]: Finished running node test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9
+[0m13:41:11.240682 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:41:11.240979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.unique_stg_fivetran_platform__user_user_id.86a1a3afb9, now test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a)
+[0m13:41:11.241228 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:41:11.244574 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a"
+[0m13:41:11.245091 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:41:11.245501 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a
+[0m13:41:11.245756 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:41:11.246008 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_movie_current_movie_id.3a54c4c90a, now test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e)
+[0m13:41:11.246233 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:41:11.248983 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e"
+[0m13:41:11.249379 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:41:11.249800 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e
+[0m13:41:11.250064 [debug] [Thread-1 (]: Began running node model.swarmed_vision.my_second_dbt_model
+[0m13:41:11.250329 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.unique_movie_current_movie_id.71f4d7788e, now model.swarmed_vision.my_second_dbt_model)
+[0m13:41:11.250553 [debug] [Thread-1 (]: Began compiling node model.swarmed_vision.my_second_dbt_model
+[0m13:41:11.252681 [debug] [Thread-1 (]: Writing injected SQL for node "model.swarmed_vision.my_second_dbt_model"
+[0m13:41:11.253124 [debug] [Thread-1 (]: Began executing node model.swarmed_vision.my_second_dbt_model
+[0m13:41:11.253517 [debug] [Thread-1 (]: Finished running node model.swarmed_vision.my_second_dbt_model
+[0m13:41:11.253769 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:41:11.254077 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.swarmed_vision.my_second_dbt_model, now test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m13:41:11.254319 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:41:11.258159 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m13:41:11.258553 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:41:11.258918 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:41:11.259144 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:41:11.259376 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_my_first_dbt_model_id.5fb22c2710, now test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321)
+[0m13:41:11.259580 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:41:11.262190 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321"
+[0m13:41:11.262582 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:41:11.262941 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321
+[0m13:41:11.263176 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__mar_table_history
+[0m13:41:11.263405 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.unique_my_first_dbt_model_id.16e066b321, now model.fivetran_log.fivetran_platform__mar_table_history)
+[0m13:41:11.263612 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__mar_table_history
+[0m13:41:11.265997 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__mar_table_history"
+[0m13:41:11.266371 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__mar_table_history
+[0m13:41:11.266698 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__mar_table_history
+[0m13:41:11.266910 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a
+[0m13:41:11.267170 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__mar_table_history, now test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a)
+[0m13:41:11.267378 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a
+[0m13:41:11.269965 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a"
+[0m13:41:11.270343 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a
+[0m13:41:11.270682 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a
+[0m13:41:11.270906 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__audit_user_activity
+[0m13:41:11.271132 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__connector_connector_name__destination_id.38a4da659a, now model.fivetran_log.fivetran_platform__audit_user_activity)
+[0m13:41:11.271327 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__audit_user_activity
+[0m13:41:11.275836 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__audit_user_activity"
+[0m13:41:11.276171 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__audit_user_activity
+[0m13:41:11.276488 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__audit_user_activity
+[0m13:41:11.276681 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__connector_status
+[0m13:41:11.276916 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__audit_user_activity, now model.fivetran_log.fivetran_platform__connector_status)
+[0m13:41:11.277101 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__connector_status
+[0m13:41:11.281219 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__connector_status"
+[0m13:41:11.281620 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__connector_status
+[0m13:41:11.281928 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__connector_status
+[0m13:41:11.282127 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d
+[0m13:41:11.282375 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__connector_status, now test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d)
+[0m13:41:11.282569 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d
+[0m13:41:11.284897 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d"
+[0m13:41:11.285192 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d
+[0m13:41:11.285482 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d
+[0m13:41:11.285666 [debug] [Thread-1 (]: Began running node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:41:11.285857 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_stg_fivetran_platform__log_log_id__created_at.c406abd91d, now test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778)
+[0m13:41:11.286021 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:41:11.289074 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778"
+[0m13:41:11.289408 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:41:11.289693 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778
+[0m13:41:11.289875 [debug] [Thread-1 (]: Began running node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:41:11.290057 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.not_null_my_second_dbt_model_id.151b76d778, now test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493)
+[0m13:41:11.290219 [debug] [Thread-1 (]: Began compiling node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:41:11.292230 [debug] [Thread-1 (]: Writing injected SQL for node "test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493"
+[0m13:41:11.292511 [debug] [Thread-1 (]: Began executing node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:41:11.292786 [debug] [Thread-1 (]: Finished running node test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:41:11.292970 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__usage_mar_destination_history
+[0m13:41:11.293148 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swarmed_vision.unique_my_second_dbt_model_id.57a0f8c493, now model.fivetran_log.fivetran_platform__usage_mar_destination_history)
+[0m13:41:11.293326 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__usage_mar_destination_history
+[0m13:41:11.296437 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__usage_mar_destination_history"
+[0m13:41:11.296740 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__usage_mar_destination_history
+[0m13:41:11.297026 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__usage_mar_destination_history
+[0m13:41:11.297216 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441
+[0m13:41:11.297430 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__usage_mar_destination_history, now test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441)
+[0m13:41:11.297606 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441
+[0m13:41:11.299779 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441"
+[0m13:41:11.300141 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441
+[0m13:41:11.300430 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441
+[0m13:41:11.300620 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3
+[0m13:41:11.300803 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__mar_table_history_connector_id__destination_id__schema_name__table_name__measured_month.b7babb1441, now test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3)
+[0m13:41:11.300972 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3
+[0m13:41:11.303048 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3"
+[0m13:41:11.303335 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3
+[0m13:41:11.303695 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3
+[0m13:41:11.303882 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__audit_table
+[0m13:41:11.304065 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__audit_user_activity_log_id__occurred_at.be572689a3, now model.fivetran_log.fivetran_platform__audit_table)
+[0m13:41:11.304230 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__audit_table
+[0m13:41:11.310064 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__audit_table"
+[0m13:41:11.310429 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__audit_table
+[0m13:41:11.310712 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__audit_table
+[0m13:41:11.310893 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__connector_daily_events
+[0m13:41:11.311106 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__audit_table, now model.fivetran_log.fivetran_platform__connector_daily_events)
+[0m13:41:11.311269 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__connector_daily_events
+[0m13:41:11.316667 [debug] [Thread-1 (]: Using snowflake connection "model.fivetran_log.fivetran_platform__connector_daily_events"
+[0m13:41:11.316879 [debug] [Thread-1 (]: On model.fivetran_log.fivetran_platform__connector_daily_events: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "node_id": "model.fivetran_log.fivetran_platform__connector_daily_events"} */
+select  min( signed_up ) as min_date from FIVETRAN_SEAN_ODRISCOLL.fivetran_log.connector
+[0m13:41:11.317052 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:41:12.787165 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.469 seconds
+[0m13:41:12.793447 [debug] [Thread-1 (]: Using snowflake connection "model.fivetran_log.fivetran_platform__connector_daily_events"
+[0m13:41:12.794120 [debug] [Thread-1 (]: On model.fivetran_log.fivetran_platform__connector_daily_events: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "node_id": "model.fivetran_log.fivetran_platform__connector_daily_events"} */
+select datediff(
+        day,
+        cast('2022-09-06' as date),
+        
+
+    dateadd(
+        week,
+        1,
+        date_trunc('day', 
+  current_timestamp::timestamp
+)
+        )
+
+
+        )
+[0m13:41:13.077727 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.283 seconds
+[0m13:41:13.083070 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__connector_daily_events"
+[0m13:41:13.084423 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__connector_daily_events
+[0m13:41:13.084908 [debug] [Thread-1 (]: On model.fivetran_log.fivetran_platform__connector_daily_events: Close
+[0m13:41:13.528292 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__connector_daily_events
+[0m13:41:13.529222 [debug] [Thread-1 (]: Began running node model.fivetran_log.fivetran_platform__schema_changelog
+[0m13:41:13.530088 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__connector_daily_events, now model.fivetran_log.fivetran_platform__schema_changelog)
+[0m13:41:13.530733 [debug] [Thread-1 (]: Began compiling node model.fivetran_log.fivetran_platform__schema_changelog
+[0m13:41:13.538338 [debug] [Thread-1 (]: Writing injected SQL for node "model.fivetran_log.fivetran_platform__schema_changelog"
+[0m13:41:13.539427 [debug] [Thread-1 (]: Began executing node model.fivetran_log.fivetran_platform__schema_changelog
+[0m13:41:13.540068 [debug] [Thread-1 (]: Finished running node model.fivetran_log.fivetran_platform__schema_changelog
+[0m13:41:13.540479 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89
+[0m13:41:13.540966 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fivetran_log.fivetran_platform__schema_changelog, now test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89)
+[0m13:41:13.541329 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89
+[0m13:41:13.545852 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89"
+[0m13:41:13.546491 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89
+[0m13:41:13.547025 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89
+[0m13:41:13.547372 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd
+[0m13:41:13.547742 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_status_connector_id__destination_id.1d83a6dd89, now test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd)
+[0m13:41:13.548101 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd
+[0m13:41:13.552234 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd"
+[0m13:41:13.552819 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd
+[0m13:41:13.553298 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd
+[0m13:41:13.553604 [debug] [Thread-1 (]: Began running node test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af
+[0m13:41:13.553906 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__usage_mar_destination_history_destination_id__measured_month.05f6419efd, now test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af)
+[0m13:41:13.554172 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af
+[0m13:41:13.557604 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af"
+[0m13:41:13.558072 [debug] [Thread-1 (]: Began executing node test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af
+[0m13:41:13.558518 [debug] [Thread-1 (]: Finished running node test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af
+[0m13:41:13.558807 [debug] [Thread-1 (]: Began running node test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7
+[0m13:41:13.559094 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.not_null_fivetran_platform__audit_table_unique_table_sync_key.d6c37e48af, now test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7)
+[0m13:41:13.559355 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7
+[0m13:41:13.562187 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7"
+[0m13:41:13.562588 [debug] [Thread-1 (]: Began executing node test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7
+[0m13:41:13.562986 [debug] [Thread-1 (]: Finished running node test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7
+[0m13:41:13.563242 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f
+[0m13:41:13.563497 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.unique_fivetran_platform__audit_table_unique_table_sync_key.308ad058f7, now test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f)
+[0m13:41:13.563734 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f
+[0m13:41:13.566840 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f"
+[0m13:41:13.567291 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f
+[0m13:41:13.567702 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f
+[0m13:41:13.567961 [debug] [Thread-1 (]: Began running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493
+[0m13:41:13.568203 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__connector_daily_events_connector_id__destination_id__date_day.a279340e8f, now test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493)
+[0m13:41:13.568421 [debug] [Thread-1 (]: Began compiling node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493
+[0m13:41:13.571145 [debug] [Thread-1 (]: Writing injected SQL for node "test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493"
+[0m13:41:13.571513 [debug] [Thread-1 (]: Began executing node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493
+[0m13:41:13.571880 [debug] [Thread-1 (]: Finished running node test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493
+[0m13:41:13.572457 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:41:13.572634 [debug] [MainThread]: Connection 'test.fivetran_log.dbt_utils_unique_combination_of_columns_fivetran_platform__schema_changelog_connector_id__destination_id__message_data__created_at.cc39f64493' was properly closed.
+[0m13:41:13.575719 [debug] [MainThread]: Command end result
+[0m13:41:13.636868 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m13:41:13.637069 [info ] [MainThread]: Building catalog
+[0m13:41:13.643288 [debug] [ThreadPool]: Acquiring new snowflake connection 'FIVETRAN_SEAN_ODRISCOLL.information_schema'
+[0m13:41:13.657226 [debug] [ThreadPool]: Using snowflake connection "FIVETRAN_SEAN_ODRISCOLL.information_schema"
+[0m13:41:13.658073 [debug] [ThreadPool]: On FIVETRAN_SEAN_ODRISCOLL.information_schema: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "swarmed_vision", "target_name": "dev", "connection_name": "FIVETRAN_SEAN_ODRISCOLL.information_schema"} */
+with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from FIVETRAN_SEAN_ODRISCOLL.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__user' and upper("table_name") = upper('stg_fivetran_platform__user')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__audit_table' and upper("table_name") = upper('fivetran_platform__audit_table')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__connector_tmp' and upper("table_name") = upper('stg_fivetran_platform__connector_tmp')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_first_dbt_model' and upper("table_name") = upper('my_first_dbt_model')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__log' and upper("table_name") = upper('stg_fivetran_platform__log')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__schema_changelog' and upper("table_name") = upper('fivetran_platform__schema_changelog')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__destination' and upper("table_name") = upper('stg_fivetran_platform__destination')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__credits_used' and upper("table_name") = upper('stg_fivetran_platform__credits_used')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'connector' and upper("table_name") = upper('connector')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_scd2' and upper("table_name") = upper('movie_scd2')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_current' and upper("table_name") = upper('movie_current')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__mar_table_history' and upper("table_name") = upper('fivetran_platform__mar_table_history')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_second_dbt_model' and upper("table_name") = upper('my_second_dbt_model')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__usage_mar_destination_history' and upper("table_name") = upper('fivetran_platform__usage_mar_destination_history')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'user' and upper("table_name") = upper('user')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__connector' and upper("table_name") = upper('stg_fivetran_platform__connector')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'destination' and upper("table_name") = upper('destination')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'incremental_mar' and upper("table_name") = upper('incremental_mar')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__log_tmp' and upper("table_name") = upper('stg_fivetran_platform__log_tmp')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'person' and upper("table_name") = upper('person')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__audit_user_activity' and upper("table_name") = upper('fivetran_platform__audit_user_activity')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__connector_daily_events' and upper("table_name") = upper('fivetran_platform__connector_daily_events')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'credits_used' and upper("table_name") = upper('credits_used')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'log' and upper("table_name") = upper('log')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__incremental_mar' and upper("table_name") = upper('stg_fivetran_platform__incremental_mar')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_historical' and upper("table_name") = upper('movie_historical')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__usage_cost' and upper("table_name") = upper('stg_fivetran_platform__usage_cost')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__account' and upper("table_name") = upper('stg_fivetran_platform__account')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_cast' and upper("table_name") = upper('movie_cast')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__connector_status' and upper("table_name") = upper('fivetran_platform__connector_status')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'account' and upper("table_name") = upper('account')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie' and upper("table_name") = upper('movie')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'usage_cost' and upper("table_name") = upper('usage_cost')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from FIVETRAN_SEAN_ODRISCOLL.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__user' and upper("table_name") = upper('stg_fivetran_platform__user')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__audit_table' and upper("table_name") = upper('fivetran_platform__audit_table')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__connector_tmp' and upper("table_name") = upper('stg_fivetran_platform__connector_tmp')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_first_dbt_model' and upper("table_name") = upper('my_first_dbt_model')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__log' and upper("table_name") = upper('stg_fivetran_platform__log')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__schema_changelog' and upper("table_name") = upper('fivetran_platform__schema_changelog')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__destination' and upper("table_name") = upper('stg_fivetran_platform__destination')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__credits_used' and upper("table_name") = upper('stg_fivetran_platform__credits_used')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'connector' and upper("table_name") = upper('connector')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_scd2' and upper("table_name") = upper('movie_scd2')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_current' and upper("table_name") = upper('movie_current')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__mar_table_history' and upper("table_name") = upper('fivetran_platform__mar_table_history')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_sample' and upper("table_schema") = upper('DBT_TRANSFORM_sample')
+
+                    and 
+    "table_name" ilike 'my_second_dbt_model' and upper("table_name") = upper('my_second_dbt_model')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__usage_mar_destination_history' and upper("table_name") = upper('fivetran_platform__usage_mar_destination_history')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'user' and upper("table_name") = upper('user')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__connector' and upper("table_name") = upper('stg_fivetran_platform__connector')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'destination' and upper("table_name") = upper('destination')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'incremental_mar' and upper("table_name") = upper('incremental_mar')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__log_tmp' and upper("table_name") = upper('stg_fivetran_platform__log_tmp')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'person' and upper("table_name") = upper('person')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__audit_user_activity' and upper("table_name") = upper('fivetran_platform__audit_user_activity')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__connector_daily_events' and upper("table_name") = upper('fivetran_platform__connector_daily_events')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'credits_used' and upper("table_name") = upper('credits_used')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'log' and upper("table_name") = upper('log')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__incremental_mar' and upper("table_name") = upper('stg_fivetran_platform__incremental_mar')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_movies' and upper("table_schema") = upper('DBT_TRANSFORM_movies')
+
+                    and 
+    "table_name" ilike 'movie_historical' and upper("table_name") = upper('movie_historical')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__usage_cost' and upper("table_name") = upper('stg_fivetran_platform__usage_cost')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_stg_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_stg_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'stg_fivetran_platform__account' and upper("table_name") = upper('stg_fivetran_platform__account')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie_cast' and upper("table_name") = upper('movie_cast')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'DBT_TRANSFORM_fivetran_platform' and upper("table_schema") = upper('DBT_TRANSFORM_fivetran_platform')
+
+                    and 
+    "table_name" ilike 'fivetran_platform__connector_status' and upper("table_name") = upper('fivetran_platform__connector_status')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'account' and upper("table_name") = upper('account')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'sql_server_dbo' and upper("table_schema") = upper('sql_server_dbo')
+
+                    and 
+    "table_name" ilike 'movie' and upper("table_name") = upper('movie')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'fivetran_log' and upper("table_schema") = upper('fivetran_log')
+
+                    and 
+    "table_name" ilike 'usage_cost' and upper("table_name") = upper('usage_cost')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+[0m13:41:13.658828 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:41:25.624136 [debug] [ThreadPool]: SQL status: SUCCESS 95 in 11.965 seconds
+[0m13:41:25.635896 [debug] [ThreadPool]: On FIVETRAN_SEAN_ODRISCOLL.information_schema: Close
+[0m13:41:26.135656 [info ] [MainThread]: Catalog written to /Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/target/catalog.json
+[0m13:41:26.137290 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 29.858232, "process_user_time": 4.539646, "process_kernel_time": 0.298925, "process_mem_max_rss": "214548480", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:41:26.137653 [debug] [MainThread]: Command `dbt docs generate` succeeded at 13:41:26.137603 after 29.86 seconds
+[0m13:41:26.137843 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m13:41:26.137984 [debug] [MainThread]: Connection 'FIVETRAN_SEAN_ODRISCOLL.information_schema' was properly closed.
+[0m13:41:26.138158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113eea910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ee9f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ec7810>]}
+[0m13:41:26.138350 [debug] [MainThread]: Flushing usage events
+[0m13:41:27.856185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104b9a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110526390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110526bd0>]}
+
+
+============================== 13:41:27.858818 | d9f4b4ea-ed5a-48ff-bbff-2f8678762d52 ==============================
+[0m13:41:27.858818 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:41:27.859182 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'version_check': 'True', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs serve', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:41:28.323416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9f4b4ea-ed5a-48ff-bbff-2f8678762d52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1115d2390>]}
+[0m13:41:28.348176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd9f4b4ea-ed5a-48ff-bbff-2f8678762d52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d60f50>]}
+[0m13:43:39.612708 [error] [MainThread]: Encountered an error:
+
+[0m13:43:39.622336 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/cli/main.py", line 303, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sean.odriscoll/.pyenv/versions/3.11.9/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m13:43:39.626451 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_wall_clock_time": 131.8142, "process_user_time": 0.984197, "process_kernel_time": 0.195422, "process_mem_max_rss": "188710912", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:43:39.627904 [debug] [MainThread]: Command `dbt docs serve` failed at 13:43:39.627566 after 131.82 seconds
+[0m13:43:39.628815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104b8a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110703a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169a7950>]}
+[0m13:43:39.630054 [debug] [MainThread]: Flushing usage events
+[0m13:43:43.559206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11407f310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113150d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140ea450>]}
+
+
+============================== 13:43:43.561826 | 324f688a-8b45-4afb-8020-f8b897ebc47d ==============================
+[0m13:43:43.561826 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:43:43.562187 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt clean', 'send_anonymous_usage_stats': 'True'}
+[0m13:43:43.614733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '324f688a-8b45-4afb-8020-f8b897ebc47d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140c9490>]}
+[0m13:43:43.708885 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.18682304, "process_user_time": 0.699824, "process_kernel_time": 0.156296, "process_mem_max_rss": "111394816", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:43:43.709250 [debug] [MainThread]: Command `dbt clean` succeeded at 13:43:43.709197 after 0.19 seconds
+[0m13:43:43.709461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10468e750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047f8450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11406bf10>]}
+[0m13:43:43.709663 [debug] [MainThread]: Flushing usage events
+[0m13:44:33.140716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ffb690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105065c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105066410>]}
+
+
+============================== 13:44:33.143001 | b3486636-132d-48b4-90fc-9098572bd321 ==============================
+[0m13:44:33.143001 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:44:33.143332 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:44:33.195698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b3486636-132d-48b4-90fc-9098572bd321', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10508b010>]}
+[0m13:44:33.205638 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:44:33.206065 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:44:33.206881 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.10632025, "process_user_time": 0.66022, "process_kernel_time": 0.107244, "process_mem_max_rss": "111214592", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:44:33.207192 [debug] [MainThread]: Command `dbt deps` succeeded at 13:44:33.207132 after 0.11 seconds
+[0m13:44:33.207388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105065790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105066210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1005ca610>]}
+[0m13:44:33.207575 [debug] [MainThread]: Flushing usage events
+[0m13:44:42.750316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107dbbe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e25d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e26550>]}
+
+
+============================== 13:44:42.752519 | dc8a5a52-b087-4359-967e-e3ed0b78c087 ==============================
+[0m13:44:42.752519 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:44:42.752856 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sean.odriscoll/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:44:42.807728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc8a5a52-b087-4359-967e-e3ed0b78c087', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e9b610>]}
+[0m13:44:42.815102 [debug] [MainThread]: Set downloads directory='/var/folders/dw/qjtwfdmd5pndlpgy6p87wsgm0000gp/T/dbt-downloads-wf9pjloz'
+[0m13:44:42.815444 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m13:44:42.934777 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m13:44:42.935496 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_log.json
+[0m13:44:43.007877 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_log.json 200
+[0m13:44:43.013965 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_utils.json
+[0m13:44:43.117330 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/fivetran_utils.json 200
+[0m13:44:43.125445 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/spark_utils.json
+[0m13:44:43.373499 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/spark_utils.json 200
+[0m13:44:43.376992 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m13:44:43.452194 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m13:44:43.460586 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m13:44:43.535332 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m13:44:43.558849 [info ] [MainThread]: Updating lock file in file path: /Users/sean.odriscoll/Github/dbt_transformations/swarmed_vision/package-lock.yml
+[0m13:44:43.564353 [debug] [MainThread]: Set downloads directory='/var/folders/dw/qjtwfdmd5pndlpgy6p87wsgm0000gp/T/dbt-downloads-9nqsumge'
+[0m13:44:43.572727 [info ] [MainThread]: Installing fivetran/fivetran_log
+[0m13:44:44.145831 [info ] [MainThread]: Installed from version 1.8.0
+[0m13:44:44.146117 [info ] [MainThread]: Up to date!
+[0m13:44:44.146361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dc8a5a52-b087-4359-967e-e3ed0b78c087', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101a5e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107dfff50>]}
+[0m13:44:44.146617 [info ] [MainThread]: Installing fivetran/fivetran_utils
+[0m13:44:44.407696 [info ] [MainThread]: Installed from version 0.4.10
+[0m13:44:44.408259 [info ] [MainThread]: Up to date!
+[0m13:44:44.408606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dc8a5a52-b087-4359-967e-e3ed0b78c087', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eada50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101ab090>]}
+[0m13:44:44.408979 [info ] [MainThread]: Installing dbt-labs/spark_utils
+[0m13:44:44.633753 [info ] [MainThread]: Installed from version 0.3.0
+[0m13:44:44.634089 [info ] [MainThread]: Up to date!
+[0m13:44:44.634348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dc8a5a52-b087-4359-967e-e3ed0b78c087', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ef0bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e250d0>]}
+[0m13:44:44.634617 [info ] [MainThread]: Installing calogica/dbt_date
+[0m13:44:44.927904 [info ] [MainThread]: Installed from version 0.10.1
+[0m13:44:44.928314 [info ] [MainThread]: Up to date!
+[0m13:44:44.928641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dc8a5a52-b087-4359-967e-e3ed0b78c087', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e250d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11013fb10>]}
+[0m13:44:44.928984 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m13:44:45.313942 [info ] [MainThread]: Installed from version 1.2.0
+[0m13:44:45.314252 [info ] [MainThread]: Up to date!
+[0m13:44:45.314481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dc8a5a52-b087-4359-967e-e3ed0b78c087', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e98610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107db2790>]}
+[0m13:44:45.318174 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.6081898, "process_user_time": 0.852734, "process_kernel_time": 0.22526, "process_mem_max_rss": "116916224", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:44:45.318580 [debug] [MainThread]: Command `dbt deps` succeeded at 13:44:45.318519 after 2.61 seconds
+[0m13:44:45.318814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b86750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e3e950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11013e650>]}
+[0m13:44:45.319048 [debug] [MainThread]: Flushing usage events

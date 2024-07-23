@@ -1,3 +1,4 @@
 
-.DS_Store
-swarmed_vision/package-lock.yml
+target/
+dbt_packages/
+logs/
