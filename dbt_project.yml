@@ -33,11 +33,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  +materialized: view
+  swarmed_vision:
+    sample:
+      +materialized: view
+      +schema: sample
+    sql_server:
+      +materialized: table
+      +schema: movies
 
 vars:
 
     # Fivetran Log Package Configurations
-    fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
-    fivetran_log_using_triggers: false # this will disable only trigger_table logic 
-    fivetran_log_using_destination_membership: false # this will disable only the destination membership logic
+    fivetran_platform_using_destination_membership: false # this will disable only the destination membership logic
