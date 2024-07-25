@@ -14,7 +14,7 @@ sources:
       - name: person
 
 models:
-  - name: movie_current
+  - name: movies_current
     description: "Current Version of All Movies (SCD-4)"
     columns:
         - name: movie_id
