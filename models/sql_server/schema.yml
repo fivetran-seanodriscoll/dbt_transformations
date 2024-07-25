@@ -19,6 +19,6 @@ models:
     columns:
         - name: movie_id
           description: "The PK for this table"
-          data_tests:
+          tests:
               - unique
               - not_null
