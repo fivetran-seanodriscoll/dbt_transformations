@@ -36,10 +36,8 @@ models:
   swarmed_vision:
     sample:
       +materialized: view
-      +schema: sample
     sql_server:
       +materialized: table
-      +schema: movies
 
 vars:
 
