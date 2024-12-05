@@ -1,4 +1,4 @@
-packages:
-  - package: fivetran/fivetran_log
-    version: [">=1.9.0", "<1.10.0"]
+# packages:
+#   - package: fivetran/fivetran_log
+#     version: [">=1.9.0", "<1.10.0"]
 

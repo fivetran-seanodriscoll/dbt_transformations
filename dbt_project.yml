@@ -34,9 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_seanodriscoll:
-    sample:
-      +materialized: view
-    sql_server:
+    example:
       +materialized: table
 
 vars:
